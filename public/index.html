@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RecipeVault AI — Local QVAC</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">🍳</div>
+        <div>
+          <h1>RecipeVault AI</h1>
+          <p>Semantic recipe discovery</p>
+        </div>
+      </div>
+      <div class="status-pill" id="statusPill">
+        <span class="dot"></span>
+        LOCAL QVAC
+      </div>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">PRIVATE • ON-DEVICE AI</span>
+      <h2>Tell me what you’re craving.</h2>
+      <p class="hero-copy">
+        Search your recipe collection by meaning, not exact keywords.
+        QVAC creates embeddings locally on this machine.
+      </p>
+
+      <form id="searchForm" class="search-box">
+        <span class="search-icon">⌕</span>
+        <input
+          id="query"
+          autocomplete="off"
+          placeholder="e.g. spicy potato dish without cheese"
+        />
+        <button type="submit">Find recipes</button>
+      </form>
+
+      <div class="chips">
+        <button data-query="spicy potato dish without cheese">🌶️ Spicy potato</button>
+        <button data-query="quick vegetarian breakfast">🥣 Quick breakfast</button>
+        <button data-query="creamy pasta for dinner">🍝 Comfort dinner</button>
+        <button data-query="healthy chicken meal">🍗 Healthy chicken</button>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">LOCAL RESULTS</span>
+          <h3 id="resultTitle">Ready to search</h3>
+        </div>
+        <span id="resultCount" class="count"></span>
+      </div>
+
+      <div id="message" class="message">
+        Your search is processed by the local QVAC embedding model.
+      </div>
+
+      <div id="results" class="results"></div>
+    </section>
+
+    <footer>
+      <span>QVAC SDK 0.20.0</span>
+      <span>•</span>
+      <span>No cloud AI API</span>
+      <span>•</span>
+      <span>Local semantic search</span>
+    </footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

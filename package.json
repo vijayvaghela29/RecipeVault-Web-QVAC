@@ -1,0 +1,18 @@
+{
+  "name": "recipevault-web-qvac",
+  "version": "1.0.0",
+  "description": "RecipeVault AI - local semantic recipe search powered by Tether QVAC",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=22.17.0"
+  },
+  "dependencies": {
+    "@qvac/sdk": "0.20.0",
+    "express": "^5.1.0"
+  }
+}
