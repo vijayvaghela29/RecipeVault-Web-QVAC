@@ -1,5 +1,12 @@
 # RecipeVault AI — QVAC
+## Features
 
+- Natural-language recipe search
+- Local QVAC embeddings
+- Match percentage for results
+- 100% local semantic search
+- No cloud AI API required
+- Responsive browser interface
 RecipeVault AI is a local-first recipe discovery website. Type a natural-language craving such as **"spicy potato dish without cheese"**, and the app ranks recipes by semantic similarity.
 
 ## QVAC requirement
